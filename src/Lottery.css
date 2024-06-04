@@ -1,0 +1,11 @@
+.ticket {
+    height: 25px;
+    width: 200px;
+    border: 2px solid gray;
+    background-color: gray;
+    border-radius: 35px;
+    color: black;
+}
+/* span {
+    margin: 20px;
+} */
