@@ -12,7 +12,7 @@ function Lottery() {
 
   return (
     <div>
-      <h1>Lottery Game!</h1>
+      <h1>Game!</h1>
       <div className="ticket">
         <span>{ticket[0]}</span>
         <span>{ticket[1]}</span>
@@ -20,7 +20,9 @@ function Lottery() {
         <br />
         <br />
         <button onClick={gennerator}>buy ticket</button>
-        <h2>{isWinning && "Congratulations ! you won the game"}</h2>
+        <h2 style={{ color: "yellowgreen" }}>
+          {isWinning && "Congratulations ! you won the game"}
+        </h2>
       </div>
     </div>
   );
