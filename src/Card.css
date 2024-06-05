@@ -1,0 +1,20 @@
+.box {
+    height: 400px;
+    width: 400px;
+    border: 2px solid gray;
+    border-radius: 27px;
+    box-shadow: 10px 10px 15px gray;
+}
+.mouth {
+    font-weight: 300;
+}
+.num {
+    font-size: 50px;
+}
+.dollar {
+    font-size: 25px;
+}
+.btn {
+    width: 300px;
+    margin-top: 30px;
+}
