@@ -1,10 +1,10 @@
 import "./App.css";
-import { Cards } from "./Cards";
+import { MultipleInput } from "./MultipleInput";
 
 function App() {
   return (
     <>
-      <Cards />
+      <MultipleInput />
     </>
   );
 }
