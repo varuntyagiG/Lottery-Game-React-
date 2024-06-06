@@ -1,28 +1,30 @@
 import { useState } from "react";
 
 function MultipleInput() {
-  let [formData, setformData] = useState({ username: "", fullName: "" });
+  let [formData, setformData] = useState({
+    username: "",
+    fullName: "",
+    password: "",
+  });
 
   function HandleInputChange(event) {
-    let fieldName = event.target.name;
-    let newValue = event.target.value;
-
     setformData((currData) => {
-      currData[fieldName] = newValue;
-      return { ...currData };
+      return { ...currData, [event.target.name]: event.target.value };
     });
   }
-  function FormFunc(event) {
+  function FormSubmit(event) {
     event.preventDefault();
+    console.log(formData);
     setformData({
       username: "",
       fullName: "",
+      password: "",
     });
   }
 
   return (
     <div>
-      <form action="" onSubmit={FormFunc}>
+      <form action="" onSubmit={FormSubmit}>
         <label htmlFor="text">Username:</label>
         <input
           type="text"
@@ -42,6 +44,17 @@ function MultipleInput() {
           value={formData.fullName}
           onChange={HandleInputChange} // Event associated With input is onChange
           name="fullName"
+        />
+        <br />
+        <br />
+        <label htmlFor="text2">Password:</label>
+        <input
+          type="password"
+          id="text2"
+          placeholder="enter password"
+          value={formData.password}
+          onChange={HandleInputChange}
+          name="password"
         />
         <button>Submit</button>
       </form>
