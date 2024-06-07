@@ -1,11 +1,11 @@
 import "./App.css";
 
-import { UseEffect } from "./UseEffect";
+import { UseEffectAlert } from "./UseEffectAlert";
 
 function App() {
   return (
     <>
-      <UseEffect />
+      <UseEffectAlert />
     </>
   );
 }
