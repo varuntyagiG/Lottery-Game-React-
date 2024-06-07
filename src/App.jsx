@@ -1,11 +1,11 @@
 import "./App.css";
 
-import { LudoBoard } from "./LudoBoard.jsx";
+import { UseEffect } from "./UseEffect";
 
 function App() {
   return (
     <>
-      <LudoBoard />
+      <UseEffect />
     </>
   );
 }
