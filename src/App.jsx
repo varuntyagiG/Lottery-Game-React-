@@ -1,12 +1,11 @@
 import "./App.css";
-import { MultipleInput } from "./MultipleInput";
-import { Form } from "./Form";
-import { CommentsForm } from "./CommentsForm.jsx";
+
+import { LudoBoard } from "./LudoBoard.jsx";
 
 function App() {
   return (
     <>
-      <CommentsForm />
+      <LudoBoard />
     </>
   );
 }
